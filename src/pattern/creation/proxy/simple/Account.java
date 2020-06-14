@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pattern.creation.proxy;
+package pattern.creation.proxy.simple;
 
 /**
  *
@@ -12,6 +12,10 @@ package pattern.creation.proxy;
 public class Account {
     private Integer total;
     private String name;
+    
+    public Account(Integer money){
+        this.total=money;
+    }
 
     /**
      * @return the total

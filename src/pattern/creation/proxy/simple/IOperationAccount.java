@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pattern.creation.proxy;
+package pattern.creation.proxy.simple;
 
 /**
  *
  * @author andresalarcon
  */
 public interface IOperationAccount {
-    void addMoney();
+    void addMoney(Account account, Integer money);
 }

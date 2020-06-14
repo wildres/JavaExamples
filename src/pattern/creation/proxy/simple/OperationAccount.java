@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pattern.creation.proxy;
+package pattern.creation.proxy.simple;
 
 /**
  *
@@ -11,17 +11,9 @@ package pattern.creation.proxy;
  */
 public class OperationAccount implements IOperationAccount{
 
-    private Integer money;
-    private Account account;
-    
-    public void receiveCash(Account account, Integer money){
-        System.out.println("Received Total: "+money);
-        this.money=money;
-        this.account=account;
-    }
     
     @Override
-    public void addMoney() {
+    public void addMoney(Account account, Integer money) {
         account.setTotal(account.getTotal()+money);
         System.out.println("New Value "+account.getTotal());
     }
